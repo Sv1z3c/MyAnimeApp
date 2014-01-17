@@ -1,8 +1,10 @@
-package com.blazeka.myanimeapp;
+package com.blazeka.myanimeapp.activities;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.os.Bundle;
 import android.view.Menu;
+
+import com.blazeka.myanimeapp.R;
 
 public class LoginActivity extends Activity {
 
