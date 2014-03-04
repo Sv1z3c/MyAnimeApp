@@ -11,19 +11,14 @@ public class UserCredentials extends Model
 	private String username;
 	@Column(name = "Password")
 	private String password;
+	@Column(name = "RememberMe")
+	boolean rememberMe;
 	
-	public UserCredentials()
-	{
+	public UserCredentials() {
 		super();
+		rememberMe = false;
 	}
 
-	public UserCredentials(String username, String password)
-	{
-		super();
-		this.username = username;
-		this.password = password;
-	}
-	
 	public String getUsername() {
 		return username;
 	}
@@ -31,12 +26,21 @@ public class UserCredentials extends Model
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	
+
 	public String getPassword() {
 		return password;
 	}
-	
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public boolean isRemembered() {
+		return rememberMe;
+	}
+
+	public void setRememberMe(boolean rememberMe) {
+		this.rememberMe = rememberMe;
+	}
+	
 }
